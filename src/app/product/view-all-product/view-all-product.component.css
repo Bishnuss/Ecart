@@ -1,0 +1,23 @@
+h6{
+    color: rgb(0, 0, 0);
+}
+ 
+h6:hover {
+    color: rgb(119, 19, 213);
+  }
+/* .all{
+    border-color: brown;
+    border-radius: 10px 100px/120px;
+    background-color: rgb(200, 198, 195);
+} */
+body{
+    background-color: rgb(242, 244, 240);
+
+}
+#b1{
+    background-color: white;
+
+    border-radius: 5px 30px;
+
+}
+

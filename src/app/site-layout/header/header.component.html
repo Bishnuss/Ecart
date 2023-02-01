@@ -1,0 +1,38 @@
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container px-4 px-lg-5 md-4 ">
+
+
+                <a  class="animate-charcter navbar-brand fw-bolder" href=""><img src="https://i.postimg.cc/tCMnW1yk/cam.png" height="60px" width="50px" alt=""> Lenslab</a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto  mb-lg-0 ms-lg-4">
+                        <form class="d-flex" role="search">
+                          </form>
+                        <li class="nav-item"><a class="btn btn-outline-warning nav-link ms-4 fw-bold text-white" href="product/add-product">Add product</a></li>
+                    </ul>
+                    <form class="d-flex">
+                      <input (keyup)="search($event)" [(ngModel)]="searchterm" id="s1" name="se1" class="form-control ms-4 me-2 rounded-pill border-dark text-center" type="search" placeholder="Canon R3" aria-label="Search">
+                      <button class="btn btn-outline-success btn-sm rounded-pill" type="submit">Search</button>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img   src="https://i.postimg.cc/XYQ8bPhL/r10new.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.postimg.cc/7Z6zgZs1/mrk-6.jpg" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.postimg.cc/J7FC16w1/r3.webp" class="d-block w-100 " alt="...">
+    </div>
+
+  </div>
+</div>
+        </header>

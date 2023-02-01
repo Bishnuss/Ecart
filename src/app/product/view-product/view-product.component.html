@@ -1,0 +1,28 @@
+<body>
+    
+<!-- Product section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-2 "><img class="card-img-top mb-5 mb-md-0" src="{{productdata.productImage}}" alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">{{productdata.id}}</div>
+                <h1 class="display-5 fw-bolder">{{productdata.productName}}</h1>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration">{{productdata.price}}</span>
+                </div>
+                <p class="text-center">{{productdata.description}}</p>
+                <div class="d-flex">
+                    <!-- <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" /> -->
+
+                        <a href="product/edit-product/{{productdata.id}}" class="btn btn-outline-success flex-shrink-0 ms-3 bi-cart-fill me-1 mb-2 rounded-pill">Edit</a>
+                        
+
+                        <a href="product/delete-product/{{productdata.id}}" class="btn btn-outline-danger flex-shrink-0 ms-3 bi-cart-fill me-1 mb-2 rounded-pill">Delete</a>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>

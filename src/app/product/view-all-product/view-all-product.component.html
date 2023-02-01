@@ -1,0 +1,81 @@
+<body>
+    
+
+<div id="b2" class="container w-100">
+    <div class="row text-center">
+        <div class="col-lg text-primary mt-1">
+            <a (click)="filter('')">
+                <h6 class="fw-bold">All</h6>
+                <img style= "width:90px ; height:80px ;" src="https://i.postimg.cc/jqB2g72d/all.jpg" alt="">
+
+            </a>
+        </div>
+        <div class="col-lg p-2 text-primary ms-3">
+            <a (click)="filter('1')">
+                <h6 class="fw-bold">Camera</h6>
+                <img style="width:90px ; height:80px ;" src="https://i.postimg.cc/QC6thfZR/logo.png" alt="">
+
+            </a>
+        </div>
+        <div class="col-lg p-2 text-primary">
+            <a (click)="filter('2')">
+                <h6 class="fw-bold">Lens</h6>
+                <img style="width:90px ; height:80px ;" src="https://i.postimg.cc/Bbt88rpq/lens.jpg" alt="">
+
+            </a>
+        </div>
+        <div class="col-lg p-2 text-primary">
+            <a (click)="filter('3')">
+                <h6 class="fw-bold">Gimbals</h6>
+                <img style="width:90px ; height:80px ;" src="https://i.postimg.cc/NFd4tkzV/sample-logo.jpg" alt="">
+
+            </a>
+        </div>
+        <div class="col-lg p-2 text-primary">
+            <a (click)="filter('4')">
+                <h6 class="fw-bold">Accessories</h6>
+                <img style="width:90px ; height:80px ;" src="https://i.postimg.cc/N0pf1N5L/acc.png" alt="">
+
+            </a>
+        </div>
+
+
+    </div>
+</div>
+<hr>
+
+
+
+<!-- Section-->
+<section class="py-2">
+    <div  class="container px-4 px-lg-3 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of filterproducts | filter:searchkey: 'productName' " class="col mb-5">
+                <div id="b1" class="card">
+                    <!-- Product image-->
+                    <img style="aspect-ratio: 3/2; object-fit: contain;" class="card-img-top mt-3" src="{{i.productImage}}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{i.productName}}</h5>
+                            <p>{{i.description}}</p>
+                            <!-- Product price-->
+                            
+                            <h6 class="text-danger"><span class="text-primary">30% off - </span> {{i.price}}</h6>
+                            <h6 class="text-warning">{{i.rating}}</h6>
+                            <p>Review:{{i.review}}</p>
+                            <p>{{i.warrenty}}:Year Warrenty</p>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                          href="product/view-product/{{i.id}}">View options</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>

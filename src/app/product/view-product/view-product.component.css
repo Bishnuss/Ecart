@@ -1,0 +1,11 @@
+.row{
+    border-radius: 10px 100px/120px;
+    background-color: azure;
+    border-color: rgb(234, 72, 72) 2px;
+}
+body{
+    background-color: rgb(238, 103, 103);
+
+}
+
+

@@ -1,0 +1,44 @@
+Lazy loading 
+------------
+
+-traffic reduce cheyyan use cheyyunnu,
+
+-module creation 
+
+  ng g module modulename
+
+-lazy loaded module creation
+
+  ng g module modulename --route modulename --module rootmodulename
+
+  Json server installation command
+
+  npm i --save json-server
+   
+   to run this server
+
+   open the file location src-> asset-> data -open terminal
+
+   npx json-server --watch db.json --port 3000
+
+
+Access data from component path (url ill ninnum data edukkan)
+-------------------------------
+
+ActivatedRoute    - Class
+
+params            - Method 
+
+Pipe creation
+
+- ng g pipe filter 
+
+
+BehaviourSubject in Angular
+--------------------------
+
+rxjs 
+
+
+
+   
